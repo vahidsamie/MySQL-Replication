@@ -3,7 +3,7 @@ This article provides a simple step-by-step guide to setting up MySQL replicatio
 MySQL replication is a process that allows you to automatically copy data from one database server to another.
 In this article, I will show how to configure master-slave replication and also use keepalived service for fault tolerance or automatic failover.
 
-                                                ![keepalived](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/5416627f-5cda-41c3-828a-2e567f28b9f8)
+![keepalived](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/5416627f-5cda-41c3-828a-2e567f28b9f8)
 # Prerequisites
   1-It is important to have a basic understanding of the concept, f you are unfamiliar with it, you can refer to the documentation provided by [MySQL](https://dev.mysql.com/doc/refman/8.0/en/replication.html)
   
