@@ -1,5 +1,7 @@
 # Containerized MySQL Failover Cluster With Keepalived
 This article provides a simple step-by-step guide to setting up MySQL replication using Dockerfile. Rather than using fancy words to make the article longer, I will provide clear and concise steps to set up MySql replication with Dockerfile.
+MySQL replication is a process that allows you to automatically copy data from one database server to another.
+In this article, I will show how to configure master-slave replication and also use keepalived service for fault tolerance or automatic failover.
 
 # Prerequisites
   1-It is important to have a basic understanding of the concept, f you are unfamiliar with it, you can refer to the documentation provided by [MySQL](https://dev.mysql.com/doc/refman/8.0/en/replication.html)
