@@ -107,7 +107,7 @@ You can check the inserted data by running a SELECT query:
 
     SELECT * FROM users;
 
-
+![database](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/b80d01d1-21d2-4e1a-95db-d43f7b1b750f)
 
 
 
