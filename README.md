@@ -167,4 +167,9 @@ Create a requirements.txt file in the same directory as your app.py
 
        http://VirtualIP(10.1.1.3):5000/API/1: Show information about user1.
        http://VirtualIP(10.1.1.3):5000/API/2: Show information about user2.
+       
+![App1](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/569d6baf-f010-4cde-94a7-1e49d70cd0fb)
+
+![api2](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/ea0cb581-f0f2-47c1-af44-aa0ceb5a9a78)
+
 
