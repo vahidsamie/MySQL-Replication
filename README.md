@@ -16,3 +16,13 @@ I have created a directory named ~docker/mysql and two subdirectories, namely pr
 # Setup primary/master server
 Files for `primary`: 
 
+## .env.primary
+write the variables especially credentials to connect with primary(master) Mysql
+##  primary_my.cnf
+Mysql settings for primary Mysql container
+
+## Dockerfile
+Dockerfile to create primary and secondary MySQL container.
+
+
+
