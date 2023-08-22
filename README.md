@@ -16,7 +16,7 @@ I have created a directory named ~docker/mysql and two subdirectories, namely pr
 # Setup primary/master server
 Files for `primary`: 
 
-<<<<<<< HEAD
+
 ## .env.primary
 write the variables especially credentials to connect with primary(master) Mysql
 ##  primary_my.cnf
@@ -64,3 +64,5 @@ It will return a response something like below:
 If the response resembles the snippet above, you are prepared to proceed with setting up the secondary server.
 Take note of the mysql-bin.000003 file and 157 position values from the response above. We will utilize these values in the configuration of the secondary server.
 
+#Secondary server setup
+## Files for `secondary`
