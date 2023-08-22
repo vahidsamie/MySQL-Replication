@@ -98,7 +98,7 @@ Files for keepalive-Master (10.1.1.1):
 
 ![keep-master](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/3319a93d-c8ed-426a-b046-53ca7c647bab)
 
-Files for keepalive-Master (10.1.1.1):
+Files for keepalive-Master (10.1.1.2):
 
 ![keep-slave](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/32ff17ef-025f-4013-805b-6f9596c1280b)
 
