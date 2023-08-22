@@ -25,8 +25,42 @@ Mysql settings for primary Mysql container
 ## Dockerfile
 Dockerfile to create primary and secondary MySQL container.
 
-=======
-![master](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/bee54b13-15ff-49f7-98aa-db32f945a1a9)
->>>>>>> 56602d63715ecb44f6302d415d4071dd23a7ac81
 
+![master](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/bee54b13-15ff-49f7-98aa-db32f945a1a9)
+
+## Run Dockerfile for primary server
+Navigate to the directory where you have stored your primary Dockerfile. In my case, it is located in the directory ~/docker/mysql/primary on Ubuntu.
+
+cd ~/docker/mysql/primary
+
+sudo  docker build -t mysql-master-image- .
+
+## Check if container is created
+sudo docker ps
+
+
+A list of containers will be displayed. Please ensure that the "port" column indicates the port number. If the "port" column is blank, use the following command to check the Docker logs:
+
+sudo docker logs mysql-primary
+## Confirm replication
+Before proceeding, let us confirm that the primary server is prepared to act as the master and replicate data to the secondary server. Connect to MySQL and verify the replication status, using the server's IP address if it is not hosted locally.
+
+mysql -h 127.0.0.1 -uroot -p
+
+Once you have successfully logged in to MySQL, use the command below to verify the replication status:
+
+mysql> SHOW MASTER STATUS\G;
+
+It will return a response something like below:
+
+*************************** 1. row **************************
+
+             File: mysql-bin.000003
+         Position: 157
+      Binlog_Do_DB: mydatabase
+      Binlog_Ignore_DB: 
+    mysqlExecuted_Gtid_Set:*
+
+If the response resembles the snippet above, you are prepared to proceed with setting up the secondary server.
+Take note of the mysql-bin.000003 file and 157 position values from the response above. We will utilize these values in the configuration of the secondary server.
 
