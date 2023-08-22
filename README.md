@@ -74,7 +74,7 @@ Take note of the mysql-bin.000003 file and 157 position values from the response
  
  ![slave](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/4727cd20-6aef-4785-b681-25ff1d75a1bc)
 
- ## Please proceed as above.
+ # Please proceed as above.
 
 # Start slave
 mysql > START SLAVE;
