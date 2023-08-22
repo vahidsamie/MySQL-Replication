@@ -7,7 +7,7 @@ set -e
 if [ "$1" = 'mysqld' ]; then
     mysql -uroot -p"$MYSQL_ROOT_PASSWORD" <<EOF
         GRANT CREATE, CREATE USER ON *.* TO 'vahid'@'%';
-        CREATE USER 'replication'@'%' IDENTIFIED BY 'SQ1MasTer1092';
+        CREATE USER 'replication'@'%' IDENTIFIED BY 'yourpassword';
         GRANT REPLICATION SLAVE ON *.* TO 'replication'@'%';
         CREATE DATABASE UserInfo;
         USE UserInfo;
