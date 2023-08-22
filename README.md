@@ -85,7 +85,8 @@ mysql > SHOW SLAVE STATUS\G;
 
 You must see the response like give below image.
 
-![1681386298939](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/6fa8c386-8346-447f-81cd-04fc0ec16fac)
+![mysql](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/a1f2baaf-b907-4daa-be8f-af9a3b553d98)
+
 
 
 
