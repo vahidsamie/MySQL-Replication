@@ -126,6 +126,16 @@ Files for keepalive-Master (10.1.1.2):
 
 # Install and Configure Flask App on both servers:
 
+Files for Flask-Active (10.1.1.1):
+
+![keep-master](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/462131c4-f03c-4654-99ae-8c1fe8c704a6)
+
+
+Files for Flask-standby (10.1.1.2):
+
+![flask-slave](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/acad210b-4046-4ce5-b4a5-650c0e73d66f)
+
+
 ## 1- Create the Flask App:
 
 First, create a Python file (app.py).
