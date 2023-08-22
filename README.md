@@ -92,6 +92,25 @@ You must see the response like give below image.
 The Mysql-replication setup is complete, and my final suggestion is to establish a user account on the secondary server with read-only access. By utilizing this account to access data, we can prevent any inadvertent writing to the secondary server.
 If you wish to learn about the next steps on how to redirect traffic between the master and slave servers, you can subscribe to my newsletter.
 
+
+# Log in to the MySQL server on the master container:
+
+    docker exec -it mysql_master_container mysql -umysqluser -p
+
+ ## Use the Database:
+Switch to the "userinfo" database:
+
+    USE  UserInfo;
+
+## Verify Data:
+You can check the inserted data by running a SELECT query:
+
+    SELECT * FROM users;
+
+
+
+
+
 # Install and Configure Keepalived on both servers:
 
 Files for keepalive-Master (10.1.1.1):
@@ -125,16 +144,6 @@ Files for keepalive-Master (10.1.1.2):
 
 
 # Install and Configure Flask App on both servers:
-
-Files for Flask-Active (10.1.1.1):
-
-![keep-master](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/462131c4-f03c-4654-99ae-8c1fe8c704a6)
-
-
-Files for Flask-standby (10.1.1.2):
-
-![flask-slave](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/acad210b-4046-4ce5-b4a5-650c0e73d66f)
-
 
 ## 1- Create the Flask App:
 
