@@ -124,7 +124,22 @@ Files for keepalive-Master (10.1.1.2):
     docker logs -f keepalived-slave
 
 
+# Install and Configure Flask App on both servers:
 
+## 1- Create the Flask App:
 
- 
+First, create a Python file (app.py).
 
+## 2- Create a Dockerfile for the Flask App:
+
+create a Dockerfile in the same directory as your app.py
+
+## 3- Create a requirements.txt File:
+
+Create a requirements.txt file in the same directory as your app.py
+
+## 4- Build and Run the Docker Container:
+    docker build -t flask-api .
+    docker run -d -p 5000:5000 --name flask-api-container flask-api
+## 5- Step 5: Access the API in the Browser:
+   With the Flask API container running, you can access the user information by visiting http://VirtualIP(10.1.1.3):5000 in your web browser. The API will fetch user information from the MySQL database and display it as JSON data in the browser.
