@@ -14,7 +14,10 @@ Install Docker on your machine and make sure it's running. You may follow the of
 I have created a directory named ~docker/mysql and two subdirectories, namely primary and secondary. The primary directory will store the files for the master MySQL server, while secondary will contain the files for the first slave server.
 
 # Setup primary/master server
-Files for `primary`: 
+Files for `primary`:
+ 
+![master](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/6c3eead1-81be-47f4-897c-69b73c185c57)
+
 
 
 ## .env.primary
@@ -24,9 +27,9 @@ Mysql settings for primary Mysql container
 
 ## Dockerfile
 Dockerfile to create primary MySQL container.
+## docker-entrypoint.sh
+Create a new docker-entrypoint.sh script that includes your SQL commands
 
-
-![master](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/6c3eead1-81be-47f4-897c-69b73c185c57)
 
 
 ## Run Dockerfile for primary server
