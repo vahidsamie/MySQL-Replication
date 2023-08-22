@@ -23,10 +23,11 @@ write the variables especially credentials to connect with primary(master) Mysql
 Mysql settings for primary Mysql container
 
 ## Dockerfile
-Dockerfile to create primary and secondary MySQL container.
+Dockerfile to create primary MySQL container.
 
 
-![master](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/bee54b13-15ff-49f7-98aa-db32f945a1a9)
+![master](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/6c3eead1-81be-47f4-897c-69b73c185c57)
+
 
 ## Run Dockerfile for primary server
 Navigate to the directory where you have stored your primary Dockerfile. In my case, it is located in the directory ~/docker/mysql/primary on Ubuntu.
