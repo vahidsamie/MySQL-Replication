@@ -96,16 +96,19 @@ If you wish to learn about the next steps on how to redirect traffic between the
  1- Create a Dockerfile to build a Keepalived container with the necessary configurations.
 
 
- 2- Create a Keepalived configuration file named keepalived.conf in the same directory as the Dockerfile.
+ 2- Create a Keepalived configuration file named keepalived.conf in the same 
+ directory as the Dockerfile.
 
- 3- Build and Run Keepalived Container.
+ 3- Create a shell script named chk_mysql.sh that will be used by Keepalived to   check the health of the MySQL service on the master server.
+
+ 4- Build and Run Keepalived Container.
     
      docker build -t my-keepalived-image .
      
-4- Run the container on both servers:
+5- Run the container on both servers:
   
     docker run -d  --name keepalived-container --net=host --cap-add=NET_ADMIN --cap-add=NET_BROADCAST --cap-add=NET_RAW   my-keepalived-image
-5-Monitor and Verify:
+6-Monitor and Verify:
 
     docker logs -f keepalived-master
     docker logs -f keepalived-slave
