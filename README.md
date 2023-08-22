@@ -16,6 +16,7 @@ I have created a directory named ~docker/mysql and two subdirectories, namely pr
 # Setup primary/master server
 Files for `primary`: 
 
+<<<<<<< HEAD
 ## .env.primary
 write the variables especially credentials to connect with primary(master) Mysql
 ##  primary_my.cnf
@@ -24,5 +25,8 @@ Mysql settings for primary Mysql container
 ## Dockerfile
 Dockerfile to create primary and secondary MySQL container.
 
+=======
+![master](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/bee54b13-15ff-49f7-98aa-db32f945a1a9)
+>>>>>>> 56602d63715ecb44f6302d415d4071dd23a7ac81
 
 
