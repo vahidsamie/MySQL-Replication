@@ -107,7 +107,7 @@ You can check the inserted data by running a SELECT query:
 
     SELECT * FROM users;
 
-![database](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/b80d01d1-21d2-4e1a-95db-d43f7b1b750f)
+
 
 
 
@@ -162,3 +162,9 @@ Create a requirements.txt file in the same directory as your app.py
     docker run -d -p 5000:5000 --name flask-api-container flask-api
 ## 5- Step 5: Access the API in the Browser:
    With the Flask API container running, you can access the user information by visiting http://VirtualIP(10.1.1.3):5000 in your web browser. The API will fetch user information from the MySQL database and display it as JSON data in the browser.
+
+   The Flask API instances (user1 and user2 endpoints) should now be accessible. You can access user1 and user2 information by visiting the following URLs in your web browser:
+
+       http://VirtualIP(10.1.1.3):5000/API/1: Show information about user1.
+       http://VirtualIP(10.1.1.3):5000/API/2: Show information about user2.
+
