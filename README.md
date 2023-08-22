@@ -39,6 +39,8 @@ cd ~/docker/mysql/primary
 
 sudo  docker build -t mysql-master-image- .
 
+docker run -d --name mysql-master -p 3306:3306     --env-file .env.primary    -v /root/msql-dockerfile/primary_my.cnf:/etc/mysql/conf.d/my.cnf     -v /root/msql-dockerfile/mysqllib:/var/lib/mysql     -v /root/msql-dockerfile/mysqllog:/var/log/mysql     mysql-image-master
+
 ## Check if container is created
 sudo docker ps
 
