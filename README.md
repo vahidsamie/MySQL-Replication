@@ -74,5 +74,20 @@ Take note of the mysql-bin.000003 file and 157 position values from the response
  
  ![slave](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/4727cd20-6aef-4785-b681-25ff1d75a1bc)
 
+ Please proceed as above.
+
+# Start slave
+mysql > START SLAVE;
+
+Use the command below to verify if the secondary server is prepared to receive replication data from the primary server.
+
+mysql > SHOW SLAVE STATUS\G;
+
+You must see the response like give below image.
+
+![1681386298939](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/6fa8c386-8346-447f-81cd-04fc0ec16fac)
+
+
+
  
 
