@@ -93,6 +93,16 @@ The Mysql-replication setup is complete, and my final suggestion is to establish
 If you wish to learn about the next steps on how to redirect traffic between the master and slave servers, you can subscribe to my newsletter.
 
 # Install and Configure Keepalived on both servers:
+
+Files for keepalive-Master (10.1.1.1):
+
+![keep-master](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/3319a93d-c8ed-426a-b046-53ca7c647bab)
+
+Files for keepalive-Master (10.1.1.1):
+
+![keep-slave](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/32ff17ef-025f-4013-805b-6f9596c1280b)
+
+
  1- Create a Dockerfile to build a Keepalived container with the necessary configurations.
 
 
