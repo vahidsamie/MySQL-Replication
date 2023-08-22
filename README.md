@@ -15,6 +15,7 @@ I have created a directory named ~docker/mysql and two subdirectories, namely pr
 
 # Setup primary/master server
 Files for `primary`: 
+
 ![master](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/bee54b13-15ff-49f7-98aa-db32f945a1a9)
 
 
