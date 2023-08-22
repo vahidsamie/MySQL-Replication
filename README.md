@@ -71,7 +71,7 @@ Take note of the mysql-bin.000003 file and 157 position values from the response
 # Secondary server setup
 
  Files for `secondary`:
- 
+
  ![slave](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/4727cd20-6aef-4785-b681-25ff1d75a1bc)
 
  # Please proceed as above.
@@ -89,6 +89,8 @@ You must see the response like give below image.
 
 The Mysql-replication setup is complete, and my final suggestion is to establish a user account on the secondary server with read-only access. By utilizing this account to access data, we can prevent any inadvertent writing to the secondary server.
 If you wish to learn about the next steps on how to redirect traffic between the master and slave servers, you can subscribe to my newsletter.
+
+
 
 
 
