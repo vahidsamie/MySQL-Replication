@@ -87,6 +87,9 @@ You must see the response like give below image.
 
 ![mysql](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/a1f2baaf-b907-4daa-be8f-af9a3b553d98)
 
+The Mysql-replication setup is complete, and my final suggestion is to establish a user account on the secondary server with read-only access. By utilizing this account to access data, we can prevent any inadvertent writing to the secondary server.
+If you wish to learn about the next steps on how to redirect traffic between the master and slave servers, you can subscribe to my newsletter.
+
 
 
 
