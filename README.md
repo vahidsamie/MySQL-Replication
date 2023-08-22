@@ -15,7 +15,7 @@ I have created a directory named ~docker/mysql and two subdirectories, namely pr
 
 # Setup primary/master server
 Files for `primary`:
- 
+
 ![master](https://github.com/vahidsamie/MySQL-Replication/assets/110447267/6c3eead1-81be-47f4-897c-69b73c185c57)
 
 
@@ -32,7 +32,7 @@ Create a new docker-entrypoint.sh script that includes your SQL commands
 
 
 
-## Run Dockerfile for primary server
+# Run Dockerfile for primary server
 Navigate to the directory where you have stored your primary Dockerfile. In my case, it is located in the directory ~/docker/mysql/primary on Ubuntu.
 
 cd ~/docker/mysql/primary
@@ -70,3 +70,4 @@ Take note of the mysql-bin.000003 file and 157 position values from the response
 
 #Secondary server setup
 ## Files for `secondary`
+
